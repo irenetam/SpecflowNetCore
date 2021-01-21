@@ -19,7 +19,7 @@ namespace SpecFlowProject.Features.Alt
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class AddInvoiceWithOneRateFeature : object, Xunit.IClassFixture<AddInvoiceWithOneRateFeature.FixtureData>, System.IDisposable
+    public partial class AddInvoiceWithTwoRateFeature : object, Xunit.IClassFixture<AddInvoiceWithTwoRateFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace SpecFlowProject.Features.Alt
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "AddInvoiceWithOneRate.feature"
+#line 1 "AddInvoiceWithTwoRate.feature"
 #line hidden
         
-        public AddInvoiceWithOneRateFeature(AddInvoiceWithOneRateFeature.FixtureData fixtureData, SpecFlowProject_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public AddInvoiceWithTwoRateFeature(AddInvoiceWithTwoRateFeature.FixtureData fixtureData, SpecFlowProject_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace SpecFlowProject.Features.Alt
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Alt", "AddInvoiceWithOneRate", "\tIn order to avoid silly mistakes\r\n\tI want to add a new invoice with one rate", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Alt", "AddInvoiceWithTwoRate", "\tIn order to avoid silly mistakes\r\n\tI want to add a new invoice with one rate", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +80,16 @@ namespace SpecFlowProject.Features.Alt
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Add a new invoice with one rate successfully")]
-        [Xunit.TraitAttribute("FeatureTitle", "AddInvoiceWithOneRate")]
-        [Xunit.TraitAttribute("Description", "Add a new invoice with one rate successfully")]
+        [Xunit.SkippableFactAttribute(DisplayName="Add a new invoice with two rate successfully")]
+        [Xunit.TraitAttribute("FeatureTitle", "AddInvoiceWithTwoRate")]
+        [Xunit.TraitAttribute("Description", "Add a new invoice with two rate successfully")]
         [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void AddANewInvoiceWithOneRateSuccessfully()
+        public virtual void AddANewInvoiceWithTwoRateSuccessfully()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new invoice with one rate successfully", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new invoice with two rate successfully", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -117,7 +117,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the login page should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
- testRunner.When("I enter username \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I enter username \'tam.phan@altsourcesoftware.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
  testRunner.And("click next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -126,7 +126,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("the password login should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 12
- testRunner.When("I enter password \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I enter password \'nhocty_3890\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
  testRunner.And("click sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -169,7 +169,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "usJiraTimeLoggedOverride",
                             "usWitheldHoursOverride"});
                 table1.AddRow(new string[] {
-                            "abc",
+                            "abcd",
                             "10/10/2020",
                             "10/01/2020",
                             "100",
@@ -204,12 +204,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                AddInvoiceWithOneRateFeature.FeatureSetup();
+                AddInvoiceWithTwoRateFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                AddInvoiceWithOneRateFeature.FeatureTearDown();
+                AddInvoiceWithTwoRateFeature.FeatureTearDown();
             }
         }
     }
